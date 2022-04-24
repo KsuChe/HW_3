@@ -2,18 +2,22 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-// task 3
-        int Year = 2021;
-        if ((Year % 4 == 0) && (Year % 100 != 0) || (Year % 400 == 0)) {
-            System.out.println(Year + " високосный год");
-        } else {
-            System.out.println(Year + " не високосный год");
+// task 4
+        int deliveryDistance = 95;
+        int deliveryDay = 1;
+        if (deliveryDistance <=20) {
+            System.out.println("Потребуется дней " + deliveryDay);
+        } if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("Потребуется дней " + (deliveryDay + 1));
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println("Потребуется дней " + (deliveryDay +1+1));
+        }
         }
 
 
 
     }
-}
+
 
 
 
